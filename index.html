@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Navigation Bottom | CusMeDroid</title>
+        <link rel='icon' type='image/x-icon' href='../favicon.ico'>
+        <link rel='apple-touch-icon' href='../favicon.ico'>
+        <meta name='theme-color' content='#f4f4f4'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name='description' content='Cusmedroid is an android studio application development project name. the name was created by iyortml alias suryo dwijayanto. Initially cusmedroid was a custom rom project on smartphone android, at that time in 2014 - 2015 cusmedroid was still looking for identity, until now - then cusmedroid will be the unique name of me who doesn’t have a team.'>
+        <meta name='keywords' content='cusmedroid, iyortml, learn php with cusmedroid, learn php with iyortml, cusmedroid android, cusmedroid developer, developer indonesia, made in indonesia, website, php, html, css, js, xml, java, api, apikey, mysqli, phpmyadmin, android studio, android-studio, Suryo DwiJayanto, suryodwijayanto, portfolio, cv, curriculum vitae, profil, biography'/>
+        <meta name='author' content='CusMeDroid'>
+        <link rel='stylesheet' type='text/css' href='../css/style.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong'>
+        <link rel='stylesheet' href='../fontawesome-4/css/font-awesome.min.css'>
+        <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-XH5ZCJD408'></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-XH5ZCJD408');
+        </script>
+    </head>
+    <body id='myCopyright'>
+        <div class='sidebar Trirong'>
+            <a title='Search' class='sdactive' href='../'>Search</a>
+        </div>
+        <button class='collapsible aclp Trirong'><b>Menu</b></button>
+        <div class='clp-content-mobile Trirong'>
+            <a title='Search' href='../'>Search</a>
+        </div>
+
+        <div class='docs-content'>
+            <div class='padd-16'>
+                <h1 class='Audiowide animate-left'>Navigation Bottom</h1>
+                <p class='Trirong patobo animate-right'>How do i create bottom navigation in mobile interface by using styles from CusMeDroid?</p>
+                <h2 class='Audiowide animate-left'>Versi 1</h2>
+                <img title='Navigation Bottom by CusMeDroid' alt='Navigation Bottom by CusMeDroid' class='patobo animate-right' width='80%' src='versi_1_cusmedroid_bottom_nav.jpg' />
+                <br>
+                <b class='Trirong patobo animate-left'>Follow the code below :</b>
+                <pre class='Trirong padd-10 mybasebg animate-right black'>
+<span><</span>!DOCTYPE html>
+<span><</span>html>
+    <span><</span>head>
+        <span><</span>title>Navigation Bottom | CusMeDroid</title>
+        <span><</span>link rel='stylesheet' type='text/css' href='https://cusmedroid.github.io/css/style.css'>
+    <span><</span>/head>
+    <span><</span>body>
+        <span><</span>div class="header animate-bottom">
+            <span><</span>div class="" align="center">
+                <span><</span>div class="column-header"><span><</span>a href="#" title="Home" class="bbtn"><span><</span>i class="fa fa-home" aria-hidden="true"><span><</span>/i><span><</span>/a><span><</span>/div>
+                <span><</span>div class="column-header"><span><</span>a href="#collection" title="Collection" class="bbtn"><span><</span>i class="fa fa-picture-o" aria-hidden="true"><span><</span>/i><span><</span>/a><span><</span>/div>
+                <span><</span>div class="column-header"><span><</span>a href="#like" title="Like" class="bbtn"><span><</span>i class="fa fa-heart" aria-hidden="true"><span><</span>/i><span><</span>/a><span><</span>/div>
+                <span><</span>div class="column-header" id='musicp2'><span><</span>a title="Play" class="bbtn"><span><</span>i class="fa fa-play" aria-hidden="true"><span><</span>/i><span><</span>/a><span><</span>/div>
+                <span><</span>div class="column-header" id='musicpa2'><span><</span>a title="Pause" class="bbtn"><span><</span>i class="fa fa-pause" aria-hidden="true"><span><</span>/i><span><</span>/a><span><</span>/div>
+            <span><</span>/div>
+        <span><</span>/div>
+    <span><</span>/body>
+<span><</span>/html>
+                </pre>
+                <h2 class='Audiowide animate-left'>Versi 2</h2>
+                <img title='Navigation Bottom by CusMeDroid' alt='Navigation Bottom by CusMeDroid' class='patobo animate-right' width='80%' src='versi_2_cusmedroid_bottom_nav.jpg' />
+                <br>
+                <b class='Trirong patobo animate-left'>Follow the code below :</b>
+                <pre class='Trirong padd-10 mybasebg animate-right black'>
+<span><</span>!DOCTYPE html>
+<span><</span>html>
+    <span><</span>head>
+        <span><</span>title>Navigation Bottom | CusMeDroid</title>
+        <span><</span>link rel='stylesheet' type='text/css' href='https://cusmedroid.github.io/css/style.css'>
+    <span><</span>/head>
+    <span><</span>body>
+        <span><</span>div class='header animate-bottom'>
+            <span><</span>div class='me-bottom-bar' align='center'>
+                <span><</span>a onclick='meHome()' title='Home' class='me-menu-item me-current'><span><</span>i class='fa fa-home' aria-hidden='true'><span><</span>/i><span><</span>/a>
+                <span><</span>a onclick='meCollect()' title='Collection' class='me-menu-item'><span><</span>i class='fa fa-picture-o' aria-hidden='true' style='margin-left: -1px;'><span><</span>/i><span><</span>/a>
+                <span><</span>a onclick='meLike()' title='Like' class='me-menu-item'><span><</span>i class='fa fa-heart' aria-hidden='true' style='margin-left: -1px;'><span><</span>/i><span><</span>/a>
+                <span><</span>a class='me-nav-indicator'><span><</span>/a>
+                <span><</span>a title='Play/Pause' class='me-menu-item'>
+                    <span><</span>i class='fa fa-play' aria-hidden='true' id='musicp2'><span><</span>/i>
+                    <span><</span>i class='fa fa-pause' aria-hidden='true' style='margin-right: -2px;' id='musicpa2'><span><</span>/i>
+                <span><</span>/a>
+            <span><</span>/div>
+        <span><</span>/div>
+    <span><</span>/body>
+<span><</span>/html>
+                </pre>
+                <h2 class='Audiowide animate-left'>Note</h2>
+                <p class='Trirong patobo animate-right'>
+                    With a cusmedroid stylesheet, it makes it very easy for you to pick up some style features.<br>
+                    And you can specify an action that works for moving a page with the href in tag a or you can use the id with a click listener or you can also add onclick using the javascript language.
+                </p>
+                <p class='Trirong patobo animate-left'>If you want the navigation bottom view on the desktop delete the header class.</p>
+
+                <div class='home-bottom martobo Trirong size-18' align='right'>
+                    <cusmedroid></cusmedroid>
+                    <a title='Search' class='home-btn' href='../'>Search <span>&#8594;</span></a>
+                </div>
+            </div>
+
+            <footer class='orange-bg'>
+                <h1 class='padd-8 Audiowide animate-left'>Powered by</h1>
+                <p class='Trirong animate-right'>&copy; <script>document.write(new Date().getFullYear())</script> - <a class='white' alt='CusMeDroid' title='CusMeDroid' href='../'><b>CusMeDroid</b></a></p>
+            </footer>
+        </div>
+
+        <script type='text/javascript' src='../js/collapse.js'></script>
+        <script type='text/javascript' src='../js/disclaimer.js'></script>
+    </body>
+</html>
